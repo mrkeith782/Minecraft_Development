@@ -1,0 +1,36 @@
+main: io.github.mrkeith.tetris
+name: TetrisBattles
+version: 0.1
+author: Keith Stevens
+commands:
+  tetris:
+    description: This is the temp tetris command.
+    usage: /tetris
+    permission: tetris.basic
+    permission-message: You must have tetris.basic permission to use this!
+  tetris1:
+    description: Another temporary tetris command.
+    usage: /tetris1
+    permission: tetris.basic
+    permission-message: You must have tetris.basic permission to use this!
+  broadcast:
+    description: Broadcast to all users.
+    usage: /broadcast <message>
+    permission: tetris.basic
+    permission-message: You must have tetris.basic permission to use this!
+  broadcastname:
+    description: Broadcast to all users, providing your username.
+    usage: /broadcastname <message> or /bn <message>
+    permission: tetris.basic
+    permission-message: You must have tetris.basic permission to use this!
+  bn:
+    description: Broadcast to all users, providing your username.
+    usage: /bn <message>
+    permission: tetris.basic
+    permission-message: You must have tetris.basic permission to use this!
+  sethome:
+    description: Set home
+    usage: /sethome
+  home:
+    description: Go home
+    usage: /home

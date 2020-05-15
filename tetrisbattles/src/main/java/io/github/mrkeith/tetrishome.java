@@ -36,6 +36,7 @@ public class tetrishome implements CommandExecutor {
             return true;
         }
         if (cmd.getName().toLowerCase().equals("home")) {
+            //TODO: Add case where home is not set
             Location playerHome = homes.get(player.getUniqueId());
             player.teleport(playerHome);
             return true;

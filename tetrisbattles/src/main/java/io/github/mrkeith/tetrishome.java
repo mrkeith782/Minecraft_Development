@@ -12,11 +12,11 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class tetrishome implements CommandExecutor {
-    private final tetris tetris;
-    HashMap<UUID, Location> homes = new HashMap<UUID, Location>();
+    private final tetris Tetris;
+    private HashMap<UUID, Location> homes;
 
     public tetrishome(tetris tetris, HashMap<UUID, Location> homes) {
-        this.tetris = tetris;
+        this.Tetris = tetris;
         this.homes = homes;
     }
 

@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.UUID;
 
 import org.bukkit.Location;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 
@@ -24,6 +23,9 @@ public class tetris extends JavaPlugin {
         this.getCommand("bn").setExecutor(new tetrisBroadcast(this));
         this.getCommand("sethome").setExecutor(new tetrishome(this, homes));
         this.getCommand("home").setExecutor(new tetrishome(this, homes));
+
+        //Working on map logic
+        this.getCommand("testmap").setExecutor(new tetrismaps(this));
 
         //Handles the logic behind the shotgun and rail gun.
         this.getServer().getPluginManager().registerEvents(new tetrisShotgun(this), this);

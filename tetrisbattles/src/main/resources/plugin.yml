@@ -34,3 +34,6 @@ commands:
   home:
     description: Go home
     usage: /home
+  testmap:
+    description: Working on maps
+    usage: /testmap
